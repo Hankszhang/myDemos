@@ -63,7 +63,7 @@ def timer(delay):
         content = query()
         if prevstr != content:
             sendmail(content)
-        print time.strftime('%m-%d %X', time.localtime()) + " Result: "+ content
+        print time.strftime('%m-%d %X', time.localtime()) + " Quering Result: "+ content
         time.sleep(delay)
 
 if __name__ == '__main__':
