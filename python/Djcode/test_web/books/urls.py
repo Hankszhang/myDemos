@@ -1,0 +1,14 @@
+from django.conf.urls import patterns,url,include
+from django.conf import settings
+from books.views import *
+
+urlpatterns = patterns('',
+    url(r'^books/$',BookListView.as_view()),
+    url(r'^$',hello)
+
+)
+if settings.DEBUG:
+        import debug_toolbar
+        urlpatterns += patterns('',
+            url(r'^__debug__/', include(debug_toolbar.urls)),
+        )
