@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #-- encoding:utf-8 --
-""" this script is used for quering interview result
+""" this script is used for querying interview result
     Date: 2016-4-25
     Author: Hanks
 """
@@ -59,11 +59,13 @@ def timer(delay):
     "Set a timer for repeating query"
 
     prevstr = u"你已完成所有面试环节"
+    counter = 0
     while True:
         content = query()
+        counter += 1
         if prevstr != content:
             sendmail(content)
-        print time.strftime('%m-%d %X', time.localtime()) + " Result: "+ content
+        print time.strftime('%m-%d %X', time.localtime()) + " Querying Result[" + str(counter) + "]: "+ content
         time.sleep(delay)
 
 if __name__ == '__main__':
