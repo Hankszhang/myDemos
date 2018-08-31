@@ -1,2 +1,2 @@
-# myDemos
-All kinds of demos
+# Demos
+All kinds of demos, try something new
