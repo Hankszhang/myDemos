@@ -1,0 +1,9 @@
+[package]
+name = "rust_lock_bench"
+version = "0.1.0"
+authors = ["hankszhang918@gmail.com>"]
+
+[dependencies]
+time = "0.1"
+statrs = "0.5"
+parking_lot = "0.6"
