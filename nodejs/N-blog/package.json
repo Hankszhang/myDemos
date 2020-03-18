@@ -16,7 +16,7 @@
     "express-session": "1.12.1",
     "markdown": "0.5.0",
     "mongodb": "*",
-    "morgan": "~1.6.1",
+    "morgan": "~1.9.1",
     "multer": "^1.1.0",
     "serve-favicon": "~2.3.0",
 	"generic-pool": "*"
